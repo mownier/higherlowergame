@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wood_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mini_game" 
+        android:contentDescription="@string/label_menu"/>
+
+    <Button
+        android:id="@+id/buttonPlay"
+        android:layout_width="@dimen/button_width_main"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/button_margin_top_main"
+        android:background="@drawable/yellow_button"
+        android:onClick="onClickPlay"
+        android:text="@string/label_play"
+        android:textColor="@color/button_text_color_main" />
+
+    <Button
+        android:id="@+id/buttonScore"
+        android:layout_width="@dimen/button_width_main"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/button_margin_top_main"
+        android:background="@drawable/yellow_button"
+        android:text="@string/label_score" android:textColor="@color/button_text_color_main" android:onClick="onClickScore"/>
+
+    <Button
+        android:id="@+id/buttonHelp"
+        android:layout_width="@dimen/button_width_main"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/button_margin_top_main"
+        android:background="@drawable/yellow_button"
+        android:text="@string/label_help"
+        android:textColor="@color/button_text_color_main" android:onClick="onClickHelp"/>
+
+</LinearLayout>
